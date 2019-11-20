@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link, 
     &:visited {
         text-transform: uppercase;
@@ -10,6 +11,10 @@
         /* pos relative to hide ::after(pos absolute) behind the original button */
         position: relative;
         font-size: $default-font-size;
+
+        //changes for <button> element
+        border: none;
+        cursor: pointer;
     }
 
     &:hover {
@@ -22,7 +27,9 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .3rem .7rem rgba($color-black, .2);
     }
