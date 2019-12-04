@@ -37,6 +37,12 @@
 html {
   /* 1rem = 10px on most default browser settings */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
 
 body {
   /* box-sizing will be inherited to the whole site */
@@ -556,7 +562,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .footer__link:hover, .footer__link:active {
     color: #55c57a;
     background-color: #333;
