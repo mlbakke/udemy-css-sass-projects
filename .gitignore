@@ -5,4 +5,10 @@ node_modules/
 npm-debug.log
 package-lock.json
 test/*.log
+<<<<<<< HEAD
 text.txt
+=======
+
+#Prettier
+.vscode/
+>>>>>>> fcebcda1df1109ad886e2e59cf85d101b1340c31
