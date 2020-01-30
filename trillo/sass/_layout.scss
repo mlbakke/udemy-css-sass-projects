@@ -25,9 +25,19 @@
 .sidebar {
     background-color: var(--color-dark-1);
     flex: 0 0 18%;
+
+    //flexbox properties
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
+
+    // Test
+    height: 80rem;
+
+    // Flex-item properties
     flex: 1;
 }
