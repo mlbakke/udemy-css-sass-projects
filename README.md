@@ -2,6 +2,8 @@
 
 Projects from the ["Advanced CSS and Sass: Flexbox, Grid, Animations and More!"](https://www.udemy.com/course/advanced-css-and-sass/) course by Jonas Schmedtmann on Udemy.
 
+All projects built using Sass and npm packages.
+
 #1 - Natours project
 
 Site for nature tours built with custom grid using floats.  //Outdated practice, learning purposes only.
