@@ -29,6 +29,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
 }
+
 // LAYOUT
 .container {
     display: grid;
@@ -36,3 +37,10 @@ body {
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) 
         [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+
+// HELPER CLASSES
+//margin bottom
+.mb-sm { margin-bottom: 2rem; }
+.mb-m { margin-bottom: 3rem; }
+.mb-l { margin-bottom: 4rem; }
+.mb-xl { margin-bottom: 8rem; }
