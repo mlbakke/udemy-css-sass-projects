@@ -8,12 +8,24 @@
     justify-items: center;
     align-content: center;
 
+    @media only screen and (max-width: $bp-s) {
+       grid-column: 1 / -1;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
         grid-row-gap: 4vh;
         align-items: center;
+
+        @media only screen and (max-width: $bp-s) {
+            //image - text - * 3
+            grid-template-columns: repeat(3, min-content max-content);
+        }
+        @media only screen and (max-width: $bp-xs) {
+            grid-template-columns: min-content max-content;
+        }
     }
 
     &__img {

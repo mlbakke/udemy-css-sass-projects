@@ -11,6 +11,12 @@ $color-grey-dark-2: #6D5D4B;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+//MEDIA BREAKPOINTS
+$bp-l: 75em;  //1200px
+$bp-m: 62.5em;  //1000px
+$bp-s: 50em;    //800px
+$bp-xs: 37.5em; //600px
+
 // GLOBAL SETTINGS
 *,
 *::before,
@@ -22,6 +28,10 @@ $font-display: 'Josefin Sans', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%;   //10px
+
+    @media only screen and (max-width: $bp-l) {
+        font-size: 50%; //8px
+    }
 }
 body {
     font-family: $color-primary;
@@ -36,6 +46,16 @@ body {
     grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) 
         [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+    @media only screen and (max-width: $bp-m) {
+        grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+        grid-template-columns: [full-start] minmax(6rem, 1fr) 
+            [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
+
+    @media only screen and (max-width: $bp-s) {
+        grid-template-rows: 6rem calc(100vh - 6rem);
+    }
 }
 
 // HELPER CLASSES
