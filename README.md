@@ -6,8 +6,12 @@ All projects built using Sass and npm packages.
 
 #1 - Natours project
 
-Site for nature tours built with custom grid using floats.  //Outdated practice, learning purposes only.
+Site for nature tours built with custom grid using floats.  //Old practice, for creating sites without flex or grid.
 
 #2 - Trillo project
 
 Hotel site built with flexbox for layout.
+
+#3 - Nexter project
+
+Real estate site built for grid for layout.
